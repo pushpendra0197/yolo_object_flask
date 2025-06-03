@@ -1,0 +1,5 @@
+body{background-color:whitesmoke}
+#heading{color:tomato;text-align: center;font-style: italic;text-decoration: underline ;}
+#logo{height: 2cm;width:2cm;position:absolute;top: 0cm;}
+#output{position:absolute;right: 480px;bottom: 150px;}
+#button2{position:absolute;right: 620px;bottom: 100px;font-family: 'Times New Roman', Times, serif;color: red;font-size: large;}

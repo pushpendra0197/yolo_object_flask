@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+    <link rel="stylesheet" href="/static/css/yolo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1 id="heading">Object Detection by YOLO</h1>
+    <img  id="logo" src="\static\images\—Pngtree—south korea cute cartoon style_3720518.png" alt="">
+    <img id="output" src="{{ url_for('video_feed') }}" width="400" height="350">
+    <form action='/stop_prediction' method='post'>
+        <button id="button2">Stop Prediction</button>
+
+</body>
+</html>

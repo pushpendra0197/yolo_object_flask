@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - YOLO-flask
+name: Build and deploy Python app to Azure Web App - YOLO-FLASK
 
 on:
   push:
@@ -68,14 +68,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_48200CCB5A984F72AF07F5DEBE9D076A }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_7B6D2C338F6A4743A151E953653DF9A8 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_209FE7E589EB4CF38BBB696C3A02B5BA }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D308D1A9818845469C79DFEA18AFAC64 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C5994B4A90194A6BB91C6A0C3799F50D }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D0A696D556D546028D146620733AE9F5 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'YOLO-flask'
+          app-name: 'YOLO-FLASK'
           slot-name: 'Production'
           

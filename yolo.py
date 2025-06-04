@@ -4,7 +4,7 @@ from ultralytics import YOLO
 from flask import Flask,request,render_template,Response
 
 
-model=YOLO(r"yolov5nu.pt")
+model=YOLO(r"yolov8n.pt")
 faces=cv2.CascadeClassifier(r"haarcascade_frontalface_default.xml")
 
 
